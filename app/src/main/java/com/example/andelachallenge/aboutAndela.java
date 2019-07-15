@@ -2,7 +2,9 @@ package com.example.andelachallenge;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
+import android.net.http.SslError;
 import android.os.Bundle;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
@@ -22,8 +24,8 @@ public class aboutAndela extends AppCompatActivity {
         mWebview.setWebViewClient(new WebViewClient() {
             @SuppressWarnings("deprecation")
             @Override
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+                handler.proceed();
             }
             @TargetApi(android.os.Build.VERSION_CODES.M)
             @Override
