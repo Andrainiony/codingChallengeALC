@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Andela challenge</string>
+    <string name="welcome_message">Welcome to ALC 4.0</string>
+    <string name="about_alc">ABOUT ALC</string>
+    <string name="my_profile">My Profile</string>
+    <string name="message">The message is passed</string>
+    <string name="profile_picture">profile_picture</string>
+    <string name="fenohasina">Fenohasina</string>
+    <string name="track_android">Track : Android</string>
+    <string name="country_madagascar">Country : Madagascar</string>
+    <string name="email">Email : fenohasinad@gmail.com</string>
+    <string name="phone">Phone number : 0342512289</string>
+    <string name="slack">Slack username : @Fenohaisna</string>
+</resources>
